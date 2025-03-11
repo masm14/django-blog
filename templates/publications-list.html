@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+
+{% block content %}
+    <h2>Publications</h2>
+    {% for post in publication_list %}
+        <div>
+            <ul>
+                <li>
+                    <h3><a href="">{{ post.title }}</a></h3>
+                    <p>Author: {{ post.author }}</p>
+                </li>
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock content %}
