@@ -14,3 +14,5 @@ urlpatterns = [
     path('publication/<int:pk>/update/', PublicationUpdateView.as_view(), name='publication-update'),
     path('publication/<int:pk>/delete/', PublicationDeleteView.as_view(), name='publication-delete'),
 ]
+
+
