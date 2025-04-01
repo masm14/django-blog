@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     # local apps
     "blog", # new
     "accounts", # new
+    # 3rd party apps
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +134,7 @@ LOGIN_REDIRECT_URL = "publications-list"
 
 # logout redirect
 LOGOUT_REDIRECT_URL = "publications-list"
+
+# crispy forms
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+CRYSPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
